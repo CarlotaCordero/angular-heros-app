@@ -1,1 +1,19 @@
-<p>login-page works!</p>
+<div class="flex flex-column">
+  <span class="text-lg mb-4">Login</span>
+
+  <mat-form-field>
+    <mat-label>Usuario</mat-label>
+    <input type="text" placeholder="Nombre de usuario" matInput formControlName="username" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contraseña</mat-label>
+    <input type="password" placeholder="Contraseña" matInput formControlName="password" />
+  </mat-form-field>
+  <button mat-button mat-flat-button color="primary" type="submit">
+    <mat-icon>login</mat-icon>
+    <span>Ingresar</span>
+  </button>
+  <div class="flex justify-content-end mt-5">
+    <p>¿No tienes cuenta? <a routerLink="/auth/register">Registrate</a> ahora.</p>
+  </div>
+</div>
