@@ -1,10 +1,20 @@
 # HeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## Clone the proyect
+
+Clone de proyecto from Git
+
+## Install dependencies
+
+Install the dependencies with the command ```npm install```, then run continue with the next steps.
+
+## Start the backend
+
+Run the backend with the command ```npm run backend```.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run ```ng start``` or ```ng serve``` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
