@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card style="height: 600px;">
     <mat-card-header>
         <mat-card-title>
             {{ hero.superhero }}
@@ -15,28 +15,23 @@
       <h4>{{ hero.publisher }}</h4>
       <p>
         <strong>Primera aparición:</strong> {{ hero.first_appearance }}
-        <br>
-        <mat-chip
-          class="m-1"
-          *ngFor="let name of hero.characters.split(',') | slice:0:3 ">
-          {{ name }}
-        </mat-chip>
       </p>
     </mat-card-content>
 
-    <mat-card-actions>
+    <mat-card-actions class="display-flex gravity justify-content-end" style="margin-top: auto;">
       <button
         mat-button
         mat-raised-button
-        color="primary"
+        color="secondary"
+        class="mr-2"
         [routerLink]="['/heroes', hero.id]">
         <mat-icon>edit</mat-icon>
           Editar
       </button>
-      <span class="spacer"></span>
       <button
         mat-button
         mat-raised-button
+        color="primary"
         [routerLink]="['/heroes', hero.id]">
         <mat-icon>more_horiz</mat-icon>
           Más

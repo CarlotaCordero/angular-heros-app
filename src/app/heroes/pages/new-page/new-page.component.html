@@ -1,1 +1,61 @@
-<p>new-page works!</p>
+<h1>Héroe</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+        <div class="grid">
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre"  name="name" required/>
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Alter Ego</mat-label>
+            <input matInput placeholder="Alter Ego"  name="name" required/>
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Primera Aparicion</mat-label>
+            <input matInput placeholder="Primera Aparicion"  name="name" required/>
+          </mat-form-field>
+
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Personajes</mat-label>
+            <input matInput placeholder="Personajes"  name="name" required/>
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Universo</mat-label>
+            <mat-select placeholder="Universo"  name="name" required>
+              <mat-option *ngFor="let publisher of publishers" [value]="publisher.id">{{ publisher.desc }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+
+        <div class="flex justify-content-end mt-4">
+          <button mat-raised-button color="warn" class="mr-2"><mat-icon>delete</mat-icon>Borrar</button>
+          <button mat-raised-button color="primary"><mat-icon>save</mat-icon>Guardar</button>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Imagen del Héroe</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://via.placeholder.com/150" alt="hero">
+    </mat-card>
+
+  </div>
+
+</div>

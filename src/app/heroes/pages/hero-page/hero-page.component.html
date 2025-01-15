@@ -24,19 +24,21 @@
           <mat-list-item>{{ hero.publisher }}</mat-list-item>
           <mat-list-item>{{ hero.alter_ego }}</mat-list-item>
         </mat-list>
-        <button
-          mat-raised-button
-          color="primary"
-          [routerLink]="['/heroes/edit', hero.id]">
-            Editar
-        </button>
-        <span class="spacer"></span>
-        <button
+        <div class="flex justify-content-end mt-4">
+          <button
           mat-raised-button
           color="secondary"
-          (click)="goBack()">
-            Volver
-        </button>
+          class="mr-2"
+          [routerLink]="['/heroes/edit', hero.id]">
+            Editar
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="goBack()">
+              Volver
+          </button>
+        </div>
       </mat-card-content>
 
     </mat-card>
